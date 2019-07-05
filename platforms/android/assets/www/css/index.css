@@ -1,0 +1,130 @@
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: right;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  background: url(../img/bg-portrait.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+body, p, div{
+  margin: 0;
+}
+p {
+  padding-right: 5px;
+}
+
+.statusblock {
+  position: fixed;
+  bottom: 10%;
+  right: 7%;
+  float: right;
+  clear: both;
+  height: 60px;
+  width: 160px;
+}
+
+.version_label {
+  font-weight: bold;
+  background-color:#FFFFFF;
+}
+#app_version {
+  padding-left: 2px;
+}
+
+#mobilefirst {
+  display:none;
+  width: 160px;
+}
+
+.mobilefirst_label {
+  text-transform: none;
+  background-color:#00B2EF;
+  color:#FFFFFF;
+  margin-bottom: 20px;
+  margin-top: 2px;
+}
+
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+    -moz-animation:fade 3000ms infinite;
+}
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+.event {
+    color:#FFFFFF;
+}
+.listening {
+    background-color:#333333;
+    display:block;
+}
+.received {
+    background-color:#4B946A;
+    display:none;
+}
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+  body {
+    background: url(../img/bg-landscape.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    max-height: 400px;
+  }
+}
+
+
+.btn-group input {
+  
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button1 {background-color: rgb(130, 226, 133);} /* Green */
+.button2 {background-color: rgb(16, 168, 219);} /* Blue */
+.button3 {background-color: #66605f;} /* Red */ 
+.button4 {background-color: #07d65d; color: black;} /* Gray */ 
+.button5 {background-color: #f1d94d;} /* Black */
+.button6 {background-color: #eb7323;} /* Black */
+.button7 {background-color: #f50000;} /* Black */

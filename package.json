@@ -1,0 +1,24 @@
+{
+    "name": "com.example.helloworld",
+    "version": "1.0.0",
+    "displayName": "HelloWorld",
+    "cordova": {
+        "platforms": [
+            "android"
+        ],
+        "plugins": {
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-mfp": {}
+        }
+    },
+    "dependencies": {
+        "cordova-android": "~6.2.3",
+        "cordova-plugin-device": "^2.0.3",
+        "cordova-plugin-dialogs": "^2.0.2",
+        "cordova-plugin-globalization": "^1.11.0",
+        "cordova-plugin-mfp": "^8.0.2018090313",
+        "cordova-plugin-splashscreen": "~3",
+        "cordova-plugin-whitelist": "~1"
+    }
+}
